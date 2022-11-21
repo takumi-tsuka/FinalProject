@@ -466,6 +466,38 @@ h2 {
   .about i {
     font-size: 24px;
   }
+  .features {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    row-gap: 8vh;
+  }
+  .features h2 {
+    font-size: 30px;
+  }
+  .features h3 {
+    font-size: 24px;
+  }
+  .features p {
+    font-size: 16px;
+  }
+  .features > section {
+    row-gap: 8vh;
+    width: 90%;
+  }
+  .features > section > a {
+    font-size: 16px;
+  }
+  .features img {
+    width: 50vh;
+    height: 38vh;
+  }
+  .features > a {
+    width: 8vh;
+    height: 8vh;
+  }
+  .features i {
+    font-size: 24px;
+  }
   .organization {
     padding-top: 10vh;
     padding-bottom: 10vh;
@@ -489,6 +521,13 @@ h2 {
   .organization article figcaption {
     width: 50%;
   }
+  .organization article > a {
+    width: 8vh;
+    height: 8vh;
+  }
+  .organization article i {
+    font-size: 24px;
+  }
   .organization section {
     flex-direction: row;
     flex-wrap: wrap;
@@ -505,6 +544,9 @@ h2 {
   }
   .organization aside figcaption {
     width: 100%;
+  }
+  .organization aside i {
+    font-size: 5vh;
   }
   .contact {
     padding-top: 10vh;
@@ -555,4 +597,4 @@ h2 {
   .contact ::placeholder {
     font-size: 16px;
   }
-}
+}/*# sourceMappingURL=style.css.map */
