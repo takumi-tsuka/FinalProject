@@ -486,6 +486,9 @@ h2 {
   .organization article img {
     width: 50%;
   }
+  .organization article figcaption {
+    width: 50%;
+  }
   .organization section {
     flex-direction: row;
     flex-wrap: wrap;
@@ -499,6 +502,9 @@ h2 {
   }
   .organization aside {
     width: 30%;
+  }
+  .organization aside figcaption {
+    width: 100%;
   }
   .contact {
     padding-top: 10vh;

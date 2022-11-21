@@ -90,6 +90,9 @@
         img{
             width: 50%;
         }
+        figcaption {
+            width: 50%;
+        }
 
         }
         section {
@@ -104,8 +107,10 @@
         }
 
         aside {
-
             width: 30%;
+            figcaption {
+                width: 100%;
+            }
         }
         
     }
