@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+p,
+address,
+ul,
+figure {
+  margin: 0;
+}
+
+ul {
+  padding-left: 0;
+}
+
+header {
+  background-image: url("/img/header-home-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 20vh;
+}
+header > section {
+  background-color: rgba(25, 25, 25, 0.6);
+  width: 100%;
+  height: 100%;
+}
+header > section > section {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1vh;
+  -moz-column-gap: 0vh;
+       column-gap: 0vh;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 30%;
+}
+header nav > ul {
+  display: none;
+}
+header h1 {
+  color: whitesmoke;
+  font-size: 40px;
+  font-weight: 300;
+}
+header a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+header details {
+  padding-top: 3%;
+  width: 95%;
+  text-align: right;
+  position: absolute;
+}
+header details a {
+  text-transform: uppercase;
+}
+header summary {
+  color: whitesmoke;
+  font-size: 30px;
+}

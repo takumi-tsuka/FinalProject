@@ -1,0 +1,47 @@
+header{
+  @include bgImg("/img/header-home-bg.jpg");
+  height: 20vh;
+
+  >section{
+    background-color: $defaultLayer;
+    width: 100%;
+    height: 100%;
+    >section{
+      @include flexUseful(column,1vh,0vh,center,center);
+      height: 100%;
+      width: 30%;
+    }
+  }
+
+  nav{
+    >ul{
+      display: none;
+    }
+  }
+
+  h1{
+    color: $defaultWhite;
+    font-size: $fontSizeH1Mob;
+    font-weight: 300;
+  }
+
+  a{
+    color: $defaultWhite;
+    text-decoration: none;
+  }
+
+  details{
+    padding-top: 3%;
+    width: 95%;
+    text-align: right;
+    position: absolute;
+    a{
+      text-transform: uppercase;
+    }
+  }
+
+  summary{
+    color: $defaultWhite;
+    font-size: 30px;
+  }
+}
