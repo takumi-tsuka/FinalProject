@@ -72,6 +72,40 @@
         }
     }
 
+    .organization {
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+        row-gap: 8vh;
+        h2 {
+            font-size: $fontSizeH2Tab;
+        }
+        article {
+            row-gap: 8vh;
+            figure {
+                flex-direction: row;
+                column-gap: 2vh;
+                width: 95%;
+            }
+            
+        }
+        section {
+            flex-direction: row;
+            flex-wrap: wrap;
+            column-gap: 2vh;
+            justify-content: center;
+            a {
+                width: 50%;
+                text-align: center;
+            }
+        }
+
+        aside {
+
+            width: 30%;
+        }
+        
+    }
+
     .contact{
         padding-top: 10vh;
         padding-bottom: 10vh;

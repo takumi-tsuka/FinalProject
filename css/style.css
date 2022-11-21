@@ -466,6 +466,37 @@ h2 {
   .about i {
     font-size: 24px;
   }
+  .organization {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    row-gap: 8vh;
+  }
+  .organization h2 {
+    font-size: 30px;
+  }
+  .organization article {
+    row-gap: 8vh;
+  }
+  .organization article figure {
+    flex-direction: row;
+    -moz-column-gap: 2vh;
+         column-gap: 2vh;
+    width: 95%;
+  }
+  .organization section {
+    flex-direction: row;
+    flex-wrap: wrap;
+    -moz-column-gap: 2vh;
+         column-gap: 2vh;
+    justify-content: center;
+  }
+  .organization section a {
+    width: 50%;
+    text-align: center;
+  }
+  .organization aside {
+    width: 30%;
+  }
   .contact {
     padding-top: 10vh;
     padding-bottom: 10vh;
@@ -515,4 +546,4 @@ h2 {
   .contact ::placeholder {
     font-size: 16px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
