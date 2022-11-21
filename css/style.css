@@ -94,7 +94,7 @@ h2 {
   footer > section {
     display: flex;
     flex-direction: column;
-    width: 95%;
+    width: 100%;
     align-items: center;
     row-gap: 1vh;
   }
@@ -410,3 +410,109 @@ h2 {
     width: 100%;
   }
 }
+@media (min-width: 700px) {
+  header {
+    height: 35vh;
+  }
+  header h1 {
+    font-size: 48px;
+    padding-left: 0;
+  }
+  header a {
+    font-size: 24px;
+  }
+  header summary {
+    font-size: 50px;
+  }
+  header > section section {
+    width: 100%;
+  }
+  footer {
+    padding-top: 11vh;
+    padding-bottom: 2vh;
+  }
+  footer > section {
+    width: 100%;
+  }
+  footer p {
+    font-size: 16px;
+    text-align: center;
+  }
+  footer a {
+    width: 6vh;
+    height: 6vh;
+  }
+  footer i {
+    font-size: 20px;
+  }
+  footer article {
+    width: 30%;
+  }
+  .about {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+  }
+  .about h2 {
+    font-size: 30px;
+  }
+  .about p {
+    font-size: 16px;
+    width: 90%;
+  }
+  .about > a {
+    width: 8vh;
+    height: 8vh;
+  }
+  .about i {
+    font-size: 24px;
+  }
+  .contact {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    row-gap: 8vh;
+  }
+  .contact h2 {
+    font-size: 30px;
+  }
+  .contact form {
+    width: 55%;
+    row-gap: 3vh;
+  }
+  .contact input {
+    height: 5vh;
+  }
+  .contact textarea {
+    height: 18vh;
+  }
+  .contact > section {
+    row-gap: 2vh;
+  }
+  .contact h3 {
+    font-size: 24px;
+  }
+  .contact address {
+    font-size: 16px;
+  }
+  .contact a {
+    font-size: 20px;
+    padding-bottom: 1%;
+  }
+  .contact address {
+    text-align: center;
+  }
+  .contact iframe {
+    height: 50vh;
+  }
+  .contact [type=submit] {
+    font-size: 16px;
+  }
+  .contact ::-moz-placeholder {
+    font-size: 16px;
+  }
+  .contact :-ms-input-placeholder {
+    font-size: 16px;
+  }
+  .contact ::placeholder {
+    font-size: 16px;
+  }
+}/*# sourceMappingURL=style.css.map */

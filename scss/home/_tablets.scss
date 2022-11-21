@@ -1,0 +1,134 @@
+@media (min-width:$min-widthTab){
+    header{
+        height: 35vh;
+        h1{
+            font-size: $fontSizeH1Tab;
+            padding-left: 0;
+        }
+
+        a{
+            font-size:24px;
+        }
+
+        summary{
+            font-size: 50px;
+        }
+
+        >section{
+            section{
+                width: 100%;
+            }
+        }
+    }
+
+    footer{
+        padding-top: 11vh;
+        padding-bottom: 2vh;
+
+
+        >section{
+            width: 100%;
+        }
+
+        p{
+            font-size: $fontSizePTab;
+            text-align: center;
+        }
+
+        a{
+            width: 6vh;
+            height: 6vh;
+        }
+
+        i{
+            font-size: 20px;
+        }
+
+        article{
+            width: 30%;
+        }
+    }
+
+    .about{
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+
+        h2{
+            font-size: $fontSizeH2Tab;
+        }   
+
+        p{
+            font-size: $fontSizePTab;
+            width: 90%;
+        }
+
+        >a{
+            width: 8vh;
+            height: 8vh;
+        }
+
+        i{
+            font-size: 24px;
+        }
+    }
+
+    .contact{
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+        row-gap: 8vh;
+
+        h2{
+            font-size: $fontSizeH2Tab;
+        }
+
+        form{
+            width: 55%;
+            row-gap: 3vh;
+        }
+
+        input{
+            height: 5vh;
+        }
+
+        textarea{
+            height: 18vh;
+        }
+
+        >section{
+            row-gap: 2vh;
+        }
+
+        
+        h3{
+            font-size: $fontSizeH3Tab;
+        }
+        
+        address{
+            font-size: $fontSizePTab;
+        }
+
+        a{
+            font-size: 20px;
+            padding-bottom: 1%;
+        }
+        
+        address{
+            text-align: center;
+        }
+
+        iframe{
+            height: 50vh;
+        }
+        
+        [type="submit"]{
+            font-size: $fontSizePTab;
+        }
+
+
+        ::placeholder{
+            font-size: $fontSizePTab;
+        }
+        
+    }
+
+}
