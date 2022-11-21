@@ -81,6 +81,53 @@ h2 {
     color: whitesmoke;
     font-size: 30px;
   }
+  footer {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    row-gap: 3vh;
+    border-top: 1px solid lightgray;
+  }
+  footer > section {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    align-items: center;
+    row-gap: 1vh;
+  }
+  footer article {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+  }
+  footer p {
+    color: whitesmoke;
+    font-size: 14px;
+  }
+  footer a {
+    border: 1px solid whitesmoke;
+    border-radius: 50%;
+    color: whitesmoke;
+    width: 3vh;
+    height: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+  }
+  footer aside {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1vh;
+  }
+  footer i {
+    font-size: 14px;
+  }
   .about {
     padding-top: 3vh;
     padding-bottom: 3vh;
@@ -109,6 +156,12 @@ h2 {
   }
   .about p {
     text-align: center;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .about p > span {
+    color: firebrick;
+    font-weight: 500;
   }
   .about article {
     display: flex;
@@ -137,15 +190,15 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    row-gap: 3vh;
+    row-gap: 5vh;
     background-color: rgb(17, 18, 17);
     padding-top: 3vh;
-    padding: 3vh;
+    padding-bottom: 3vh;
   }
   .contact form {
     display: flex;
     flex-direction: column;
-    row-gap: 1vh;
+    row-gap: 2vh;
     -moz-column-gap: 0;
          column-gap: 0;
     width: 95%;
@@ -167,7 +220,41 @@ h2 {
     padding: 1%;
   }
   .contact [type=submit] {
-    width: 40%;
+    width: 30%;
     background-color: white;
+    border: none;
+    font-size: 14px;
   }
-}
+  .contact ::-moz-placeholder {
+    font-size: 14px;
+  }
+  .contact :-ms-input-placeholder {
+    font-size: 14px;
+  }
+  .contact ::placeholder {
+    font-size: 14px;
+  }
+  .contact > section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1vh;
+    width: 95%;
+    align-items: center;
+  }
+  .contact h3 {
+    color: whitesmoke;
+    text-transform: uppercase;
+  }
+  .contact address {
+    color: whitesmoke;
+    font-size: 14px;
+  }
+  .contact a {
+    color: whitesmoke;
+    font-size: 14px;
+  }
+  .contact iframe {
+    height: 40vh;
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */

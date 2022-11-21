@@ -48,6 +48,58 @@
     }
   }
 
+  footer{
+    background-color: $defaultBlack;
+    @include flexCol;
+    align-items: flex-end;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    row-gap: 3vh;
+    border-top: 1px solid lightgray;
+
+    >section{
+      @include flexCol;
+      width: 95%;
+      align-items: center;
+      row-gap: 1vh;
+    }
+
+    article{
+      width: 40%;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    p{
+      color: $defaultWhite;
+      font-size: $fontSIzePMob;
+    }
+
+    a{
+      border: 1px solid $defaultWhite;
+      border-radius: 50%;
+      color: $defaultWhite;
+      width: 3vh;
+      height: 3vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+    }
+
+    aside{
+      width: 30%;
+      @include flexCol;
+      align-items: center;
+      row-gap: 1vh;
+    }
+
+    i{
+      font-size: 14px;
+    }
+    
+  }
+
   .about{
     padding-top: 3vh;
     padding-bottom: 3vh;
@@ -73,7 +125,14 @@
     }
 
     p{
-      text-align: center
+      text-align: center;
+      font-size: $fontSIzePMob;
+      line-height: 1.5;
+
+      >span{
+        color: firebrick;
+        font-weight: 500;
+      }
     }
 
     article{
@@ -83,6 +142,7 @@
         border-bottom: 1px solid $defaultWhite;
       }
     }
+
     >a{
       color: $defaultWhite;
       border: 1px solid $defaultWhite;
@@ -97,13 +157,13 @@
   .contact{
     @include flexCol;
     align-items: center;
-    row-gap: 3vh;
+    row-gap: 5vh;
     background-color: $defaultGray;
     padding-top: 3vh;
-    padding: 3vh;
+    padding-bottom: 3vh;
 
     form{
-      @include flexThings(column,1vh,0);
+      @include flexThings(column,2vh,0);
       width: 95%;
       align-items: center;
     }
@@ -126,9 +186,43 @@
     }
 
     [type="submit"]{
-      width: 40%;
+      width: 30%;
       background-color: white;
+      border: none;
+      font-size: $fontSIzePMob;
+    }
+
+    ::placeholder{
+      font-size: $fontSIzePMob
+    }
+
+    >section{
+      @include flexCol;
+      row-gap: 1vh;
+      width: 95%;
+      align-items: center;
+    }
+
+    h3{
+      color: $defaultWhite;
+      text-transform: uppercase;
+    }
+
+    address{
+      color: $defaultWhite;
+      font-size: $fontSIzePMob;
+    }
+    
+    a{
+      color: $defaultWhite;
+      font-size: $fontSIzePMob;
+    }
+
+    iframe{
+      height: 40vh;
+      width: 100%;
     }
   }
+
 }
 
