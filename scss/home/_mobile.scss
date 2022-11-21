@@ -1,47 +1,96 @@
-header{
-  @include bgImg("/img/header-home-bg.jpg");
-  height: 20vh;
-
-  >section{
-    background-color: $defaultLayer;
-    width: 100%;
-    height: 100%;
+@media(min-width:$min-WidthMob){
+  header{
+    @include bgImg("/img/header-home-bg.jpg");
+    height: 20vh;
+  
     >section{
-      @include flexUseful(column,1vh,0vh,center,center);
+      background-color: $defaultLayer;
+      width: 100%;
       height: 100%;
-      width: 30%;
+      >section{
+        @include flexUseful(column,1vh,0vh,center,center);
+        height: 100%;
+        width: 30%;
+      }
     }
-  }
-
-  nav{
-    >ul{
-      display: none;
+  
+    nav{
+      >ul{
+        display: none;
+      }
     }
-  }
-
-  h1{
-    color: $defaultWhite;
-    font-size: $fontSizeH1Mob;
-    font-weight: 300;
-  }
-
-  a{
-    color: $defaultWhite;
-    text-decoration: none;
-  }
-
-  details{
-    padding-top: 3%;
-    width: 95%;
-    text-align: right;
-    position: absolute;
+  
+    h1{
+      color: $defaultWhite;
+      font-size: $fontSizeH1Mob;
+      font-weight: 300;
+    }
+  
     a{
+      color: $defaultWhite;
+      text-decoration: none;
+    }
+  
+    details{
+      padding-top: 3%;
+      width: 95%;
+      text-align: right;
+      position: absolute;
+      a{
+        text-transform: uppercase;
+      }
+    }
+  
+    summary{
+      color: $defaultWhite;
+      font-size: 30px;
+    }
+  }
+
+  .about{
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    background-color: $defaultBlack;
+    @include flexCol;
+    align-items: center;
+    row-gap: 5vh;
+
+    >section{
+      width: 95%;
+      @include flexThings(column,5vh,0);
+      align-items: center;
+    }
+
+    h2{
+      font-size: $fontSizeH2Mob;
       text-transform: uppercase;
     }
-  }
+    
+    p,
+    h2{
+      color: $defaultWhite;
+    }
 
-  summary{
-    color: $defaultWhite;
-    font-size: 30px;
+    p{
+      text-align: center
+    }
+
+    article{
+      @include flexCol;
+      row-gap: 1vh;
+      >span{
+        border-bottom: 1px solid $defaultWhite;
+      }
+    }
+    >a{
+      color: $defaultWhite;
+      border: 1px solid $defaultWhite;
+      border-radius: 50%;
+      width: 3vh;
+      height: 3vh;
+      @include flexUseful(row,0,0,center,center);
+      text-decoration: none;
+    }
   }
 }
+
