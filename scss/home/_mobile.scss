@@ -24,6 +24,7 @@
       color: $defaultWhite;
       font-size: $fontSizeH1Mob;
       font-weight: 300;
+      padding-left: 10%;
     }
   
     a{
@@ -90,6 +91,43 @@
       height: 3vh;
       @include flexUseful(row,0,0,center,center);
       text-decoration: none;
+    }
+  }
+
+  .contact{
+    @include flexCol;
+    align-items: center;
+    row-gap: 3vh;
+    background-color: $defaultGray;
+    padding-top: 3vh;
+    padding: 3vh;
+
+    form{
+      @include flexThings(column,1vh,0);
+      width: 95%;
+      align-items: center;
+    }
+
+    h2{
+      font-size: $fontSizeH2Mob;
+      text-transform: uppercase;
+      color: $defaultWhite;
+    }
+
+    input{
+      width: 100%;
+      height: 4vh;
+      padding: 1%;
+    }
+
+    textarea{
+      height: 15vh;
+      width: 100%;padding: 1%;
+    }
+
+    [type="submit"]{
+      width: 40%;
+      background-color: white;
     }
   }
 }
