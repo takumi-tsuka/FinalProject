@@ -670,6 +670,38 @@ h2 {
   .about i {
     font-size: 18px;
   }
+  .organization article {
+    row-gap: 13vh;
+  }
+  .organization article a {
+    width: 4vh;
+    height: 4vh;
+    transition: 0.4s;
+  }
+  .organization article a:hover {
+    color: black;
+    background-color: whitesmoke;
+  }
+  .organization h2 {
+    font-size: 34px;
+  }
+  .organization h3 {
+    font-size: 28px;
+  }
+  .organization p {
+    font-size: 16px;
+  }
+  .organization aside {
+    width: 28%;
+  }
+  .organization section > a {
+    font-size: 20px;
+    width: 60%;
+  }
+  .organization section > a:hover {
+    background-color: transparent;
+    color: rgb(168, 167, 167);
+  }
   .contact {
     flex-wrap: wrap;
     flex-direction: row;

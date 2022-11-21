@@ -81,6 +81,44 @@
       font-size: 18px;
     }
   }
+
+  .organization {
+    article {
+      row-gap: 13vh;
+      a {
+        width: 4vh;
+        height: 4vh;
+        transition: .4s;
+        &:hover {
+          color: $defaultBlack;
+          background-color: $defaultWhite;
+        }
+      }
+    }
+    h2 {
+      font-size: $fontSizeH2Des;
+    }
+    h3 {
+      font-size: $fontSizeH3Des;
+    }
+    p{
+      font-size: $fontSizePDes;
+    }
+    aside {
+      // border: 1px solid red;
+      width: 28%;
+    }
+    section {
+      >a {
+        font-size: 20px;
+        width: 60%;
+        &:hover {
+          background-color: transparent;
+          color: rgb(168, 167, 167);
+        }
+      }
+    }
+  }
   
   .contact {
     flex-wrap: wrap;
