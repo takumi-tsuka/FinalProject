@@ -157,6 +157,75 @@
     }
   }
 
+  .features{
+    @include flexCol;
+    align-items: center;
+    background-color: $defaultGray;
+    row-gap: 5vh;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+
+    h2{
+      color: $defaultWhite;
+      font-size:$fontSizeH2Mob;
+      text-transform: uppercase;
+    }
+
+    h3{
+      color: $defaultWhite;
+      font-size: $fontSizeH3Mob;
+      font-weight: 500;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    p{
+      color: $defaultWhite;
+      font-size: $fontSIzePMob;
+      line-height: 1.5;
+    }
+
+    >section{
+      @include flexThings(column,8vh,0);
+      width: 95%;
+
+      a{
+        text-decoration: none;
+        color: $defaultWhite;
+        text-align: center
+      }
+    }
+
+    figure{
+      @include flexCol;
+      row-gap: 2vh;
+      align-items: center;
+    }
+
+    img{
+      width: 35vh;
+      height: 26vh;
+    }
+
+    figcaption{
+      @include flexCol;
+      row-gap: 1vh;
+      align-items: center;
+    }
+
+    >a{
+      width: 3vh;
+      height: 3vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      color: $defaultWhite;
+      border: 1px solid $defaultWhite;
+      border-radius: 50%;
+    }
+  }
+
   .organization {
     @include flexThings(column, 3vh, 0vh);
     align-items: center;
