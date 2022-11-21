@@ -239,6 +239,7 @@
     article {
       @include flexCol;
       row-gap: 5vh;
+      align-items: center;
 
       figure {
         @include flexCol;
@@ -248,8 +249,17 @@
       figcaption {
         @include flexCol;
         align-items: center;
-        column-gap: 5vh;
+        row-gap: 5vh;
         width: 95%;
+      }
+      >a {
+        color: $defaultWhite;
+        border: 1px solid $defaultWhite;
+        border-radius: 50%;
+        width: 3vh;
+        height: 3vh;
+        @include flexUseful(row, 0, 0, center, center);
+        text-decoration: none;
       }
     }
 
@@ -259,17 +269,18 @@
 
     section {
       @include flexCol;
-      row-gap: 3vh;
+      row-gap: 7vh;
       align-items: center;
+      i {
+        font-size: 5vh;
+      }
     }
 
+
     aside {
-      @include flexUseful(column,3vh,0vh,center,center);
+      @include flexUseful(column,1vh,0vh,center,center);
       width: 70%;
       text-align: center;
-    }
-    i {
-      font-size: 5vh;
     }
     h2 {
       font-size: $fontSizeH2Mob;
@@ -277,6 +288,7 @@
     }
     h3 {
       text-transform: uppercase;
+      font-size: $fontSizeH3Mob;
     }
     p,
     a {

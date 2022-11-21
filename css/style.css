@@ -190,7 +190,7 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(17, 18, 17);
+    background-color: rgb(38, 40, 38);
     row-gap: 5vh;
     padding-top: 3vh;
     padding-bottom: 3vh;
@@ -269,6 +269,7 @@ h2 {
     display: flex;
     flex-direction: column;
     row-gap: 5vh;
+    align-items: center;
   }
   .organization article figure {
     display: flex;
@@ -280,9 +281,23 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    -moz-column-gap: 5vh;
-         column-gap: 5vh;
+    row-gap: 5vh;
     width: 95%;
+  }
+  .organization article > a {
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+    border-radius: 50%;
+    width: 3vh;
+    height: 3vh;
+    display: flex;
+    flex-direction: row;
+    row-gap: 0;
+    -moz-column-gap: 0;
+         column-gap: 0;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
   }
   .organization img {
     width: 100%;
@@ -290,13 +305,16 @@ h2 {
   .organization section {
     display: flex;
     flex-direction: column;
-    row-gap: 3vh;
+    row-gap: 7vh;
     align-items: center;
+  }
+  .organization section i {
+    font-size: 5vh;
   }
   .organization aside {
     display: flex;
     flex-direction: column;
-    row-gap: 3vh;
+    row-gap: 1vh;
     -moz-column-gap: 0vh;
          column-gap: 0vh;
     justify-content: center;
@@ -304,15 +322,13 @@ h2 {
     width: 70%;
     text-align: center;
   }
-  .organization i {
-    font-size: 5vh;
-  }
   .organization h2 {
     font-size: 25px;
     text-transform: uppercase;
   }
   .organization h3 {
     text-transform: uppercase;
+    font-size: 20px;
   }
   .organization p,
 .organization a {
@@ -327,7 +343,7 @@ h2 {
     flex-direction: column;
     align-items: center;
     row-gap: 5vh;
-    background-color: rgb(17, 18, 17);
+    background-color: rgb(38, 40, 38);
     padding-top: 3vh;
     padding-bottom: 3vh;
   }
@@ -393,4 +409,4 @@ h2 {
     height: 40vh;
     width: 100%;
   }
-}/*# sourceMappingURL=style.css.map */
+}
