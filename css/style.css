@@ -597,4 +597,125 @@ h2 {
   .contact ::placeholder {
     font-size: 16px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+@media (min-width: 1000px) {
+  header {
+    height: 50vh;
+  }
+  header h1 {
+    font-size: 60px;
+  }
+  header details {
+    display: none;
+  }
+  header nav > ul {
+    display: flex;
+    justify-content: flex-end;
+    -moz-column-gap: 5vh;
+         column-gap: 5vh;
+    padding-top: 2%;
+    padding-right: 1%;
+  }
+  header a {
+    font-size: 30px;
+    text-transform: uppercase;
+    transition: 0.4s;
+  }
+  header a:hover {
+    color: rgb(168, 167, 167);
+  }
+  header > section > section {
+    padding-bottom: 5%;
+  }
+  footer {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  footer > section {
+    width: 30%;
+  }
+  footer aside {
+    width: 30%;
+    padding-left: 15%;
+  }
+  footer article {
+    width: 50%;
+    justify-content: space-between;
+  }
+  footer a {
+    transition: 0.4s;
+  }
+  footer a:hover {
+    background-color: whitesmoke;
+  }
+  footer a:hover i {
+    color: black;
+  }
+  .about h2 {
+    font-size: 34px;
+  }
+  .about a {
+    width: 4vh;
+    height: 4vh;
+    transition: 0.4s;
+  }
+  .about a:hover {
+    background-color: whitesmoke;
+  }
+  .about a:hover i {
+    color: black;
+  }
+  .about i {
+    font-size: 18px;
+  }
+  .contact {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    -moz-column-gap: 10vh;
+         column-gap: 10vh;
+  }
+  .contact h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 34px;
+  }
+  .contact h3 {
+    font-size: 28px;
+  }
+  .contact form {
+    width: 35%;
+  }
+  .contact input,
+.contact textarea {
+    width: 100%;
+  }
+  .contact > section {
+    width: 35%;
+  }
+  .contact iframe {
+    height: 40vh;
+    width: 90%;
+  }
+  .contact [type=submit] {
+    transition: 0.4s;
+  }
+  .contact [type=submit]:hover {
+    background-color: darkgray;
+    color: whitesmoke;
+  }
+  .contact ::-moz-placeholder {
+    font-size: 16px;
+  }
+  .contact :-ms-input-placeholder {
+    font-size: 16px;
+  }
+  .contact ::placeholder {
+    font-size: 16px;
+  }
+  .contact a:hover {
+    color: rgb(168, 167, 167);
+  }
+}

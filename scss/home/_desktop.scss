@@ -1,0 +1,138 @@
+@media(min-width:$min-widthDes){
+  header {
+    height: 50vh;
+    h1 {
+      font-size: $fontSizeH1Des;
+    }
+    details {
+      display: none;
+    }
+    nav{
+      >ul {
+        display: flex;
+        justify-content: flex-end;
+        column-gap: 5vh;
+        padding-top: 2%;
+        padding-right: 1%;
+      }
+    }
+    a {
+      font-size: 30px;
+      text-transform: uppercase;
+      transition: .4s;
+      &:hover {
+        color: rgb(168, 167, 167);
+      }
+    }
+
+    >section{
+      >section{
+        padding-bottom: 5%;
+      }
+    }
+  }
+
+  footer{
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    flex-direction: row;
+    justify-content: space-around;
+
+    >section{
+      width: 30%;
+    }
+
+    aside{
+      width: 30%;
+      padding-left: 15%;
+    }
+    article{
+      width: 50%;
+      justify-content: space-between;
+      }
+
+    a{
+      transition: .4s;
+      &:hover{
+        background-color: $defaultWhite;
+        i{
+          color: $defaultBlack;
+        }
+      }
+    }
+  }
+
+  .about{
+    h2{
+      font-size: $fontSizeH2Des;
+    }
+    a {
+      width: 4vh;
+      height: 4vh;
+      transition: .4s;
+      &:hover{
+        background-color: $defaultWhite;
+        i{
+          color: $defaultBlack;
+        }
+      }
+    }
+    i {
+      font-size: 18px;
+    }
+  }
+  
+  .contact {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 10vh;
+
+    h2{
+      width: 100%;
+      text-align: center;
+      font-size: $fontSizeH2Des;
+    }
+
+    h3{
+      font-size: $fontSizeH3Des;
+    }
+
+    form{
+      width: 35%;
+    }
+
+    input,
+    textarea{
+      width: 100%;
+    }
+
+    >section{
+      width: 35%;
+    }
+
+    iframe{
+      height: 40vh;
+      width: 90%;
+    }
+
+    [type="submit"]{
+      transition: .4s;
+      &:hover{
+        background-color: darkgray;
+        color: $defaultWhite;
+      }
+    }
+
+    ::placeholder{
+      font-size: $fontSizePDes;
+    }
+
+    a{
+      &:hover{
+        color:  rgb(168, 167, 167);
+      }
+    }
+  }
+
+}
