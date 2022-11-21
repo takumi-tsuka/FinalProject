@@ -483,6 +483,9 @@ h2 {
          column-gap: 2vh;
     width: 95%;
   }
+  .organization article img {
+    width: 50%;
+  }
   .organization section {
     flex-direction: row;
     flex-wrap: wrap;
