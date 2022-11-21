@@ -1,54 +1,56 @@
-@media(min-width:$min-WidthMob){
-  header{
+@media(min-width:$min-WidthMob) {
+  header {
     @include bgImg("/img/header-home-bg.jpg");
     height: 20vh;
-  
-    >section{
+
+    >section {
       background-color: $defaultLayer;
       width: 100%;
       height: 100%;
-      >section{
-        @include flexUseful(column,1vh,0vh,center,center);
+
+      >section {
+        @include flexUseful(column, 1vh, 0vh, center, center);
         height: 100%;
         width: 30%;
       }
     }
-  
-    nav{
-      >ul{
+
+    nav {
+      >ul {
         display: none;
       }
     }
-  
-    h1{
+
+    h1 {
       color: $defaultWhite;
       font-size: $fontSizeH1Mob;
       font-weight: 300;
       padding-left: 10%;
     }
-  
-    a{
+
+    a {
       color: $defaultWhite;
       text-decoration: none;
     }
-  
-    details{
+
+    details {
       padding-top: 3%;
       width: 95%;
       text-align: right;
       position: absolute;
-      a{
+
+      a {
         text-transform: uppercase;
       }
     }
-  
-    summary{
+
+    summary {
       color: $defaultWhite;
       font-size: 30px;
     }
   }
 
-  footer{
+  footer {
     background-color: $defaultBlack;
     @include flexCol;
     align-items: flex-end;
@@ -57,25 +59,25 @@
     row-gap: 3vh;
     border-top: 1px solid lightgray;
 
-    >section{
+    >section {
       @include flexCol;
       width: 95%;
       align-items: center;
       row-gap: 1vh;
     }
 
-    article{
+    article {
       width: 40%;
       display: flex;
       justify-content: space-around;
     }
 
-    p{
+    p {
       color: $defaultWhite;
       font-size: $fontSIzePMob;
     }
 
-    a{
+    a {
       border: 1px solid $defaultWhite;
       border-radius: 50%;
       color: $defaultWhite;
@@ -87,20 +89,20 @@
       text-decoration: none;
     }
 
-    aside{
+    aside {
       width: 30%;
       @include flexCol;
       align-items: center;
       row-gap: 1vh;
     }
 
-    i{
+    i {
       font-size: 14px;
     }
-    
+
   }
 
-  .about{
+  .about {
     padding-top: 3vh;
     padding-bottom: 3vh;
     background-color: $defaultBlack;
@@ -108,53 +110,117 @@
     align-items: center;
     row-gap: 5vh;
 
-    >section{
+    >section {
       width: 95%;
-      @include flexThings(column,5vh,0);
+      @include flexThings(column, 5vh, 0);
       align-items: center;
     }
 
-    h2{
+    h2 {
       font-size: $fontSizeH2Mob;
       text-transform: uppercase;
     }
-    
+
     p,
-    h2{
+    h2 {
       color: $defaultWhite;
     }
 
-    p{
+    p {
       text-align: center;
       font-size: $fontSIzePMob;
       line-height: 1.5;
 
-      >span{
+      >span {
         color: firebrick;
         font-weight: 500;
       }
     }
 
-    article{
+    article {
       @include flexCol;
       row-gap: 1vh;
-      >span{
+
+      >span {
         border-bottom: 1px solid $defaultWhite;
       }
     }
 
-    >a{
+    >a {
       color: $defaultWhite;
       border: 1px solid $defaultWhite;
       border-radius: 50%;
       width: 3vh;
       height: 3vh;
-      @include flexUseful(row,0,0,center,center);
+      @include flexUseful(row, 0, 0, center, center);
       text-decoration: none;
     }
   }
 
-  .contact{
+  .organization {
+    @include flexThings(column, 3vh, 0vh);
+    align-items: center;
+    row-gap: 3vh;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    background-color: $defaultBlack;
+    color: $defaultWhite;
+    
+
+    article {
+      @include flexCol;
+      row-gap: 5vh;
+
+      figure {
+        @include flexCol;
+        row-gap: 5vh;
+        align-items: center;
+      }
+      figcaption {
+        @include flexCol;
+        align-items: center;
+        column-gap: 5vh;
+        width: 95%;
+      }
+    }
+
+    img {
+      width: 100%;
+    }
+
+    section {
+      @include flexCol;
+      row-gap: 3vh;
+      align-items: center;
+    }
+
+    aside {
+      @include flexUseful(column,3vh,0vh,center,center);
+      width: 70%;
+      text-align: center;
+    }
+    i {
+      font-size: 5vh;
+    }
+    h2 {
+      font-size: $fontSizeH2Mob;
+      text-transform: uppercase;
+    }
+    h3 {
+      text-transform: uppercase;
+    }
+    p,
+    a {
+      font-size: $fontSIzePMob;
+    }
+
+    a {
+      text-decoration: none;
+      color: $defaultWhite
+    }
+  }
+
+  .contact {
     @include flexCol;
     align-items: center;
     row-gap: 5vh;
@@ -162,67 +228,67 @@
     padding-top: 3vh;
     padding-bottom: 3vh;
 
-    form{
-      @include flexThings(column,2vh,0);
+    form {
+      @include flexThings(column, 2vh, 0);
       width: 95%;
       align-items: center;
     }
 
-    h2{
+    h2 {
       font-size: $fontSizeH2Mob;
       text-transform: uppercase;
       color: $defaultWhite;
     }
 
-    input{
+    input {
       width: 100%;
       height: 4vh;
       padding: 1%;
     }
 
-    textarea{
+    textarea {
       height: 15vh;
-      width: 100%;padding: 1%;
+      width: 100%;
+      padding: 1%;
     }
 
-    [type="submit"]{
+    [type="submit"] {
       width: 30%;
       background-color: white;
       border: none;
       font-size: $fontSIzePMob;
     }
 
-    ::placeholder{
+    ::placeholder {
       font-size: $fontSIzePMob
     }
 
-    >section{
+    >section {
       @include flexCol;
       row-gap: 1vh;
       width: 95%;
       align-items: center;
     }
 
-    h3{
+    h3 {
       color: $defaultWhite;
       text-transform: uppercase;
     }
 
-    address{
-      color: $defaultWhite;
-      font-size: $fontSIzePMob;
-    }
-    
-    a{
+    address {
       color: $defaultWhite;
       font-size: $fontSIzePMob;
     }
 
-    iframe{
+    a {
+      color: $defaultWhite;
+      font-size: $fontSIzePMob;
+    }
+
+    iframe {
       height: 40vh;
       width: 100%;
     }
   }
 
 }
-

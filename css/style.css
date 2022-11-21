@@ -186,6 +186,76 @@ h2 {
     align-items: center;
     text-decoration: none;
   }
+  .organization {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3vh;
+    -moz-column-gap: 0vh;
+         column-gap: 0vh;
+    align-items: center;
+    row-gap: 3vh;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    background-color: black;
+    color: whitesmoke;
+  }
+  .organization article {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5vh;
+  }
+  .organization article figure {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5vh;
+    align-items: center;
+  }
+  .organization article figcaption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    -moz-column-gap: 5vh;
+         column-gap: 5vh;
+    width: 95%;
+  }
+  .organization img {
+    width: 100%;
+  }
+  .organization section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3vh;
+    align-items: center;
+  }
+  .organization aside {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3vh;
+    -moz-column-gap: 0vh;
+         column-gap: 0vh;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    text-align: center;
+  }
+  .organization i {
+    font-size: 5vh;
+  }
+  .organization h2 {
+    font-size: 25px;
+    text-transform: uppercase;
+  }
+  .organization h3 {
+    text-transform: uppercase;
+  }
+  .organization p,
+.organization a {
+    font-size: 14px;
+  }
+  .organization a {
+    text-decoration: none;
+    color: whitesmoke;
+  }
   .contact {
     display: flex;
     flex-direction: column;
@@ -257,4 +327,4 @@ h2 {
     height: 40vh;
     width: 100%;
   }
-}/*# sourceMappingURL=style.css.map */
+}
