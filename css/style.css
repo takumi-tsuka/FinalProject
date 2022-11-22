@@ -31,7 +31,7 @@ h2 {
   font-weight: 500;
 }
 
-@media (min-width: 300px) {
+@media (min-width: 200px) {
   header {
     background-image: url("/img/header-home-bg.jpg");
     background-position: center;
@@ -410,7 +410,7 @@ h2 {
     width: 100%;
   }
 }
-@media (min-width: 700px) {
+@media (min-width: 600px) {
   header {
     height: 35vh;
   }
