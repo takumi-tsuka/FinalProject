@@ -670,6 +670,53 @@ h2 {
   .about i {
     font-size: 18px;
   }
+  .features {
+    row-gap: 10vh;
+  }
+  .features h2 {
+    font-size: 34px;
+  }
+  .features h3 {
+    font-size: 28px;
+  }
+  .features p {
+    font-size: 16px;
+  }
+  .features > section {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    -moz-column-gap: 5vh;
+         column-gap: 5vh;
+    row-gap: 15vh;
+  }
+  .features > section > a {
+    font-size: 20px;
+    transition: 0.4s;
+  }
+  .features > section > a:hover {
+    color: rgb(168, 167, 167);
+  }
+  .features figure {
+    width: 45%;
+  }
+  .features figure:first-child {
+    width: 100%;
+    flex-direction: row-reverse;
+  }
+  .features img {
+    width: 60vh;
+    height: 45vh;
+  }
+  .features > a {
+    width: 4vh;
+    height: 4vh;
+    transition: 0.4s;
+  }
+  .features > a:hover {
+    color: black;
+    background-color: whitesmoke;
+  }
   .organization article {
     row-gap: 13vh;
   }
@@ -750,4 +797,4 @@ h2 {
   .contact a:hover {
     color: rgb(168, 167, 167);
   }
-}
+}/*# sourceMappingURL=style.css.map */
