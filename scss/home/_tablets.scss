@@ -75,7 +75,7 @@
     .features{
         padding-top: 10vh;
         padding-bottom: 10vh;
-        row-gap: 8vh;
+        row-gap: 5vh;
         h2{
             font-size: $fontSizeH2Tab;
         }
@@ -86,12 +86,12 @@
 
         p{
             font-size: $fontSizePTab;
-
+            line-height: 2;
         }
 
         >section{
-            row-gap: 8vh;
-            width: 90%;
+            row-gap: 2vh;
+            width: 80%;
 
             >a{
                 font-size: $fontSizePTab;
@@ -99,8 +99,7 @@
         }
 
         img{
-            width: 50vh;
-            height: 38vh;
+            height: 40vh;
         }
 
         >a{
@@ -195,7 +194,6 @@
         >section{
             row-gap: 2vh;
         }
-
         
         h3{
             font-size: $fontSizeH3Tab;
@@ -217,11 +215,14 @@
         iframe{
             height: 50vh;
         }
+
+        i{
+            font-size: 20px;
+        }
         
         [type="submit"]{
             font-size: $fontSizePTab;
         }
-
 
         ::placeholder{
             font-size: $fontSizePTab;
