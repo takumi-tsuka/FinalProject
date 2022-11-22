@@ -83,7 +83,7 @@
   }
 
   .features{
-    row-gap: 10vh;
+    row-gap: 4vh;
     h2{
       font-size: $fontSizeH2Des;
     }
@@ -97,11 +97,8 @@
     }
 
     >section{
-      flex-wrap: wrap;
-      flex-direction: row;
-      justify-content: center;
-      column-gap: 5vh;
-      row-gap: 15vh;
+      row-gap: 4vh;
+      width: 85%;
 
       >a{
         font-size: 20px;
@@ -112,18 +109,8 @@
       }
     }
 
-    figure{
-      width: 45%;
-    }
-
-    figure:first-child{
-      width: 100%;
-      flex-direction: row-reverse;
-    }
-
     img{
-      width: 60vh;
-      height: 45vh;
+      height: 65vh;
     }
 
     >a{
@@ -135,6 +122,10 @@
         background-color: $defaultWhite;
       }
     }
+  }
+
+  .carousel-caption {
+    padding-bottom: 10vh;
   }
 
   .organization {
@@ -227,5 +218,4 @@
       }
     }
   }
-
 }
