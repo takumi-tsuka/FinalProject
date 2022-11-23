@@ -1,4 +1,15 @@
 @media (min-width:$min-WidthMob){
+    h2{
+        color: $defaultWhite;
+        font-size: $fontSizeH2Mob;
+        text-transform: uppercase;
+    }
+
+    p{
+        color: $defaultWhite;
+        font-size: $fontSIzePMob;
+    }
+
     .headfea{
         @include bgImg("/img/header-fea-bg.jpg");
 
@@ -20,4 +31,52 @@
     .dropdown-menu {
         --bs-dropdown-min-width: 0;
     }
+
+    .udon{
+        padding-top: 3vh;
+        padding-bottom: 3vh;
+        background-color: $defaultGray;
+        @include flexThings(column,5vh,0);
+        align-items: center;
+
+        h3{
+            font-size: $fontSizeH3Mob;
+            color: $defaultWhite;
+            font-weight: 300;
+            text-transform: uppercase;
+        }
+
+        figure{
+            width: 95%;
+        }
+        
+        h3{
+            text-align: center;
+        }
+
+        p{
+            text-align: justify;
+            line-height: 1.5;
+        }
+
+        :nth-child(2){
+            img{
+                float: left;
+                margin-right: 1vh;
+            }
+        }
+
+        :last-child{
+            img{
+                float: right;
+                margin-left: 1vh;
+            }
+        }
+
+        img{
+            width: 12vh;
+            height: 12vh;
+        }
+    }
+
 }
