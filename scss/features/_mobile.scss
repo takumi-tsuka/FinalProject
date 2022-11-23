@@ -1,0 +1,23 @@
+@media (min-width:$min-WidthMob){
+    .headfea{
+        @include bgImg("/img/header-fea-bg.jpg");
+
+    }
+
+    .dropdown{
+        width: 20%;
+        >button{
+            background-color: transparent;
+            border: none;
+            text-transform: capitalize;
+        }
+
+        a{
+            font-size: $fontSIzePMob;
+            text-transform: uppercase;
+        }
+    }
+    .dropdown-menu {
+        --bs-dropdown-min-width: 0;
+    }
+}
