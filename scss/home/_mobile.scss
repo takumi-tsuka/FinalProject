@@ -38,6 +38,9 @@
       width: 95%;
       text-align: right;
       position: absolute;
+      >ul {
+        @include flexThings(column,2vh,0vh);
+      }
 
       a {
         text-transform: uppercase;
@@ -112,7 +115,7 @@
 
     >section {
       width: 95%;
-      @include flexThings(column, 5vh, 0);
+      @include flexThings(column, 3vh, 0);
       align-items: center;
     }
 
@@ -241,7 +244,7 @@
       figcaption {
         @include flexCol;
         align-items: center;
-        row-gap: 5vh;
+        row-gap: 3vh;
         width: 95%;
       }
       >a {
@@ -271,8 +274,11 @@
   
     aside {
       @include flexUseful(column,1vh,0vh,center,center);
-      width: 70%;
+      width: 35vh;
+      height: 35vh;
+      border-radius: 50%;
       text-align: center;
+      background-color: $defaultGray;
     }
     h2 {
       font-size: $fontSizeH2Mob;
