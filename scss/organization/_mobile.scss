@@ -1,0 +1,154 @@
+@media(min-width:$min-WidthMob) {
+
+  header {
+    background-image: none;
+  }
+  .vision {
+    @include bgImg("/img/pic-vision.jpg");
+    height: 30vh;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    @include flexCol;
+    align-items: center;
+    text-align: center;
+    >section {
+      @include flexThings(column,3vh,0);
+      align-items: center;
+      width: 95%;
+    }
+    
+    h2 {
+      color: $defaultWhite;
+      font-size: $fontSizeH2Mob;
+      text-transform: uppercase;
+    }
+    p {
+      color: $defaultWhite;
+      font-size: $fontSIzePMob;
+    }
+  }
+
+  .event {
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    @include flexThings(column,2vh,0vh);
+    
+    >aside {
+      @include flexThings(column,2vh,0vh);
+      align-items: center;
+      text-align: center
+    }
+    article {
+      @include flexCol;
+      align-items: center;
+      width: 90%
+    }
+    
+    >section {
+      @include flexThings(column,5vh,0vh);
+    }
+    figure {
+      @include flexThings(column,2vh,0vh);
+      align-items: center;
+    }
+
+    img {
+      width: 30vh;
+      height: 30vh;
+      border-radius: 50%;
+    }
+    figcaption {
+      font-size: $fontSizeH3Mob;
+      color: $defaultGray;
+      width: 80%;
+      text-align: center;
+    }
+    h2,
+    h3,
+    p {
+      color: $defaultGray;
+    }
+    h2 {
+      font-size: $fontSizeH2Mob;
+      text-transform: uppercase;
+    }
+    h3 {
+      font-size: $fontSizeH3Mob;
+      text-transform: capitalize;
+    }
+    p {
+      font-size: $fontSIzePMob;
+      width: 95%;
+    }
+
+    span {
+      width: 30%;
+      border-bottom: 3px solid $defaultGray;
+      height: 2vh;
+    }
+
+    
+  }
+  .lesson {
+    @include bgImg("/img/pic-lesson01.jpg");
+    padding-top:3vh;
+    padding-bottom:3vh;
+    @include flexThings(column,5vh,0vh);
+    align-items: center;
+    
+    h2 {
+      font-size: $fontSizeH2Mob;
+      color: $defaultGray;
+      text-transform: uppercase;
+    }
+    
+  }
+
+  .lessonprice {
+    @include flexThings(column,5vh,0vh);
+    align-items: center;
+    >article {
+      @include flexThings(column,3vh,0vh);
+      width: 95%;
+    }
+    span {
+      font-size: 20px;
+      font-weight: 600;
+    }
+    li {
+      list-style-type: none;
+    }
+    table,
+    td {
+      border: 1px solid $defaultGray;
+      text-align: center;
+    }
+    table {
+      width: 95%;
+    }
+  }
+
+  .lessonplace {
+    @include flexThings(column,3vh,0vh);
+    >article {
+    @include flexThings(column,3vh,0vh);
+    }
+    aside {
+    @include flexThings(column,1vh,0vh);
+    }
+    ul {
+    @include flexThings(column,1vh,0vh);
+    }
+    li {
+      list-style-type: square;
+    }
+    a {
+      text-decoration: none;
+      color: $defaultGray;
+    }
+  }
+
+
+
+
+}
