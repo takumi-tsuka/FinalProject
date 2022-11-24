@@ -1,5 +1,13 @@
 @media(min-width:$min-WidthMob) {
-
+  footer {
+   details {
+    summary,
+    li,
+    a {
+      color: $defaultWhite;
+    }
+   }
+  }
   .headerorgbg {
     background-image: none;
     li {
@@ -12,20 +20,27 @@
       }
     }
   }
-  .vision {
+  .btn-primary {
+    --bs-btn-bg:none;
+    --bs-btn-border-color:none;
+  }
+
+  .mission {
     @include bgImg("/img/pic-vision.jpg");
-    height: 30vh;
+    height: 62vh;
     padding-top: 3vh;
     padding-bottom: 3vh;
     @include flexCol;
     align-items: center;
     text-align: center;
     >section {
-      @include flexThings(column,3vh,0);
+      @include flexThings(column,2vh,0);
       background-color: $defaultGray;
       opacity: .8;
       align-items: center;
-      width: 95%;
+      width: 90%;
+      height: 58vh;
+      padding-top: 2vh;
       padding-bottom: 2vh;
       border-top-left-radius: 5vh;
       border-top-right-radius: 5vh;
@@ -40,6 +55,7 @@
       color: $defaultWhite;
       font-size: $fontSIzePMob;
       font-weight: 600;
+      line-height: 2;
     }
   }
 
@@ -109,9 +125,14 @@
     padding-bottom:3vh;
     @include flexThings(column,5vh,0vh);
     align-items: center;
-    background-color: $defaultLayer;
-    >section {
-      border: 1px solid $defaultWhite;
+    @include bgImg("/img/pic-lesson03.jpg");
+    >article {
+      @include flexThings(column,3vh,0vh);
+      align-items: center;
+      text-align: center;
+    }
+    section {
+      border: 1px solid $defaultGray;
       padding: 2%;
       display: flex;
       flex-direction: column;
@@ -130,10 +151,14 @@
     
     h2 {
       font-size: $fontSizeH2Mob;
-      color: $defaultWhite;
+      color: $defaultGray;
       text-transform: uppercase;
     }
     
+    p {
+      color: $defaultGray;
+      font-size: $fontSIzePMob
+    }
   }
 
   .lessonprice {
@@ -149,11 +174,16 @@
     }
     li {
       list-style-type: none;
+      color: $defaultGray;
     }
     table,
     td {
       border: 3px solid $defaultGray;
       text-align: center;
+    }
+    th,
+    td {
+      color: $defaultGray;
     }
     table {
       width: 95%;
@@ -171,12 +201,15 @@
     ul {
     @include flexThings(column,1vh,0vh);
     }
-    li {
+    h3,
+    li,
+    a,
+    address {
       list-style-type: square;
+      color: $defaultGray;
     }
     a {
       text-decoration: none;
-      color: $defaultGray;
     }
   }
   .recipe {
@@ -187,6 +220,8 @@
     >article {
     @include flexThings(column,3vh,0vh);
     align-items: center;
+    text-align: center;
+    width: 95%;
     }
     h2 {
       font-size: $fontSizeH2Mob;
@@ -244,17 +279,28 @@
     }
     img {
       width: 100%;
+      height: 30vh;
     }
     a {
       text-decoration:none;
-      color: $defaultGray;
+      color: $defaultWhite;
       background-color: $defaultLayer;
       border: 1px solid $defaultGray;
-      border-radius: 3vh;
-      padding: 1%;
+      padding: 2%;
+      transition: .4s;
+      &:hover {
+        background-color: $defaultWhite;
+        color: $defaultGray;
+      }
     }
     aside {
-      display: flex;
+      @include flexThings(row,0vh,2vh);
+      justify-content: center;
+      align-items: center;
+      padding-top: 2vh;
+      padding-bottom: 2vh;
+      border: 1px solid $defaultGray;
     }
+    
   }
 }
