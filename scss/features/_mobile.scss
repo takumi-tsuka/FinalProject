@@ -8,6 +8,7 @@
     p{
         color: $defaultWhite;
         font-size: $fontSIzePMob;
+        line-height: 1.5;
     }
 
     .headfea{
@@ -38,6 +39,7 @@
             text-transform: uppercase;
         }
     }
+
     .dropdown-menu {
         --bs-dropdown-min-width: 0;
     }
@@ -89,4 +91,75 @@
         }
     }
 
+    .history{
+        background-color: $defaultBlack;
+        padding-top: 3vh;
+        padding-bottom: 3vh;
+        @include flexCol;
+        align-items: center;
+        row-gap: 3vh;
+
+        h4{
+            color: $defaultWhite;
+            font-size: $fontSizeH3Mob;
+            text-transform: uppercase;
+
+        }
+
+        p{
+            padding-bottom: 3vh;
+            text-align: justify
+        }
+
+        > section{
+            @include flexCol;
+            align-items:center;
+            row-gap: 3vh;
+        }
+
+        a{
+            text-transform: capitalize;
+            font-size: 12px;
+            padding: 0;
+            padding: 1%;
+            padding-top: 6%;
+            padding-left: 3%;
+        }
+
+        figure{
+            width: 100%;
+        }
+
+        img{
+            width: 100%;
+            height: 25vh;
+        }
+
+        article{
+            width: 95%;
+            display: flex;
+            justify-content:center;
+            column-gap: 3vh;
+
+        }
+    }
+
+    .col-4{
+        width: 30%;
+        padding: 0;
+        >section{
+            border-radius: 4px;
+        }
+    }
+
+    .col-8{
+        width: 60%;
+        padding: 0;
+    }
+
+    .list-group{
+        --bs-list-group-bg: rgb(215, 215, 215);
+        --bs-list-group-active-bg: rgb(115, 115, 115);
+        --bs-list-group-active-border-color: rgb(115, 115, 115);
+    }
 }
