@@ -13,6 +13,16 @@
     .headfea{
         @include bgImg("/img/header-fea-bg.jpg");
 
+        details{
+            >ul{
+                @include flexCol;
+                row-gap: 1vh;
+            }
+
+            li{
+                list-style-type: none;
+            }
+        }
     }
 
     .dropdown{
