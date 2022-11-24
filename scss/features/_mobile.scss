@@ -103,6 +103,7 @@
             color: $defaultWhite;
             font-size: $fontSizeH3Mob;
             text-transform: uppercase;
+            font-weight: 400;
 
         }
 
@@ -161,5 +162,57 @@
         --bs-list-group-bg: rgb(215, 215, 215);
         --bs-list-group-active-bg: rgb(115, 115, 115);
         --bs-list-group-active-border-color: rgb(115, 115, 115);
+    }
+
+    .noodles{
+        background-color: $defaultGray;
+        padding-top: 3vh;
+        padding-bottom: 3vh;
+        @include flexCol;
+        align-items: center;
+        row-gap: 5vh;
+
+        h3{
+            font-size: $fontSizeH3Mob;
+            color: $defaultWhite;
+            text-transform: uppercase;
+            font-weight: 400;
+        }
+
+        >p{
+            width: 95%;
+            text-align: center;
+        }
+
+        >section{
+            @include flexCol;
+            align-items: center;
+            row-gap: 6vh;
+            width: 95%;
+        }
+
+        figure{
+            width: 100%;
+            @include flexCol;
+            align-items: center;
+            row-gap: 2vh;
+        }
+
+        img{
+            width: 32vh;
+            height: 24vh;
+        }
+
+        figcaption{
+            @include flexCol;
+            align-items: center;
+            row-gap: 1vh;
+            
+            p{
+                text-align: center;
+            }
+        }
+
+        
     }
 }
