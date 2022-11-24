@@ -1,7 +1,16 @@
 @media(min-width:$min-WidthMob) {
 
-  header {
+  .headerorgbg {
     background-image: none;
+    li {
+      list-style-type: none;
+    }
+    a{
+      transition: .4s;
+      &:hover {
+        color: $defaultLayer;
+      }
+    }
   }
   .vision {
     @include bgImg("/img/pic-vision.jpg");
@@ -13,8 +22,13 @@
     text-align: center;
     >section {
       @include flexThings(column,3vh,0);
+      background-color: $defaultGray;
+      opacity: .8;
       align-items: center;
       width: 95%;
+      padding-bottom: 2vh;
+      border-top-left-radius: 5vh;
+      border-top-right-radius: 5vh;
     }
     
     h2 {
@@ -25,6 +39,7 @@
     p {
       color: $defaultWhite;
       font-size: $fontSIzePMob;
+      font-weight: 600;
     }
   }
 
@@ -90,15 +105,32 @@
     
   }
   .lesson {
-    @include bgImg("/img/pic-lesson01.jpg");
     padding-top:3vh;
     padding-bottom:3vh;
     @include flexThings(column,5vh,0vh);
     align-items: center;
+    background-color: $defaultLayer;
+    >section {
+      border: 1px solid $defaultWhite;
+      padding: 2%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 90%;
+    }
+    video {
+      object-fit: cover;
+      object-position: center;
+      width: 100%;
+      height: 100%;
+   }
+   
+   
+    
     
     h2 {
       font-size: $fontSizeH2Mob;
-      color: $defaultGray;
+      color: $defaultWhite;
       text-transform: uppercase;
     }
     
@@ -120,7 +152,7 @@
     }
     table,
     td {
-      border: 1px solid $defaultGray;
+      border: 3px solid $defaultGray;
       text-align: center;
     }
     table {
@@ -147,8 +179,82 @@
       color: $defaultGray;
     }
   }
+  .recipe {
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    @include flexThings(column,3vh,0vh);
+    align-items: center;
+    >article {
+    @include flexThings(column,3vh,0vh);
+    align-items: center;
+    }
+    h2 {
+      font-size: $fontSizeH2Mob;
+      color: $defaultGray;
+      text-transform: uppercase;
+    }
+    span {
+      width: 20%;
+      border-bottom: 2px solid $defaultGray;
+    }
+    li {
+      list-style-type: none;
+    }
+  }
+  .accordion {
+    width: 85%;
+  }
+  .accordion-body {
+    @include flexThings(column,2vh,0);
+    img {
+      width: 100%;
+      height: 35vh;
+    }
+  }
+  .accordion-button {
+    background-color: $defaultLayer;
+    color: $defaultWhite;
+  }
+  .accordion-button:not(.collapsed){
+    background-color: $defaultLayer;
+    color: $defaultWhite;
+  }
+  .accordion-button:not(.collapsed)::after {
+    color: black;
+  }
 
+  
 
-
-
+  .shopping {
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    @include flexThings(column,3vh,0vh);
+    >article{
+      @include flexThings(column,3vh,0vh);
+      align-items: center;
+      text-align: center;
+    }
+    h2 {
+      font-size: $fontSizeH2Mob;
+      text-transform: uppercase;
+    }
+    p {
+      font-size: $fontSIzePMob;
+      width: 95%;
+    }
+    img {
+      width: 100%;
+    }
+    a {
+      text-decoration:none;
+      color: $defaultGray;
+      background-color: $defaultLayer;
+      border: 1px solid $defaultGray;
+      border-radius: 3vh;
+      padding: 1%;
+    }
+    aside {
+      display: flex;
+    }
+  }
 }
