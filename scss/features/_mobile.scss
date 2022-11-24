@@ -256,6 +256,7 @@
             @include flexCol;
             align-items: center;
             row-gap: 3vh;
+            width: 95%
         }
 
         aside{
@@ -267,7 +268,6 @@
                 @include flexCol;
                 align-items: center; 
                 row-gap: 2vh;
-                width: 95%;
             }
 
             img{
@@ -283,7 +283,6 @@
                 row-gap: 1vh;
             }
         }
-
     }
 
     .variety{
