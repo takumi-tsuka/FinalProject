@@ -1,0 +1,23 @@
+@media(min-width:$min-widthTab) {
+.headerorgbg {
+  h1 {
+    font-size: $fontSizeH1Tab;
+  }
+}
+.mission {
+  height: 40vh;
+  >section {
+    height: 35vh;
+  }
+  h2 {
+    font-size: $fontSizeH2Tab;
+  }
+  p {
+    font-size: $fontSizePTab;
+  }
+
+}
+
+
+
+}
