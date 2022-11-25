@@ -1,0 +1,308 @@
+@media(min-width:$min-WidthMob) {
+  footer {
+   details {
+    summary,
+    li,
+    a {
+      color: $defaultWhite;
+    }
+   }
+  }
+  .headerorgbg {
+    background-image: none;
+    li {
+      list-style-type: none;
+    }
+    a{
+      transition: .4s;
+      &:hover {
+        color: $defaultLayer;
+      }
+    }
+  }
+  .btn-primary {
+    --bs-btn-bg:none;
+    --bs-btn-border-color:none;
+  }
+
+  .mission {
+    @include bgImg("/img/pic-vision.jpg");
+    height: 62vh;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    @include flexCol;
+    align-items: center;
+    text-align: center;
+    >section {
+      @include flexThings(column,2vh,0);
+      background-color: $defaultGray;
+      opacity: .8;
+      align-items: center;
+      width: 90%;
+      height: 58vh;
+      padding-top: 2vh;
+      padding-bottom: 2vh;
+      border-top-left-radius: 5vh;
+      border-top-right-radius: 5vh;
+    }
+    
+    h2 {
+      color: $defaultWhite;
+      font-size: $fontSizeH2Mob;
+      text-transform: uppercase;
+    }
+    p {
+      color: $defaultWhite;
+      font-size: $fontSIzePMob;
+      font-weight: 600;
+      line-height: 2;
+    }
+  }
+
+  .event {
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    @include flexThings(column,2vh,0vh);
+    
+    >aside {
+      @include flexThings(column,2vh,0vh);
+      align-items: center;
+      text-align: center
+    }
+    article {
+      @include flexCol;
+      align-items: center;
+      width: 90%
+    }
+    
+    >section {
+      @include flexThings(column,5vh,0vh);
+    }
+    figure {
+      @include flexThings(column,2vh,0vh);
+      align-items: center;
+    }
+
+    img {
+      width: 30vh;
+      height: 30vh;
+      border-radius: 50%;
+    }
+    figcaption {
+      font-size: $fontSizeH3Mob;
+      color: $defaultGray;
+      width: 80%;
+      text-align: center;
+    }
+    h2,
+    h3,
+    p {
+      color: $defaultGray;
+    }
+    h2 {
+      font-size: $fontSizeH2Mob;
+      text-transform: uppercase;
+    }
+    h3 {
+      font-size: $fontSizeH3Mob;
+      text-transform: capitalize;
+    }
+    p {
+      font-size: $fontSIzePMob;
+      width: 95%;
+    }
+
+    span {
+      width: 30%;
+      border-bottom: 3px solid $defaultGray;
+      height: 2vh;
+    }
+
+    
+  }
+  .lesson {
+    padding-top:3vh;
+    padding-bottom:3vh;
+    @include flexThings(column,5vh,0vh);
+    align-items: center;
+    @include bgImg("/img/pic-lesson03.jpg");
+    >article {
+      @include flexThings(column,3vh,0vh);
+      align-items: center;
+      text-align: center;
+    }
+    section {
+      border: 1px solid $defaultGray;
+      padding: 2%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 90%;
+    }
+    video {
+      object-fit: cover;
+      object-position: center;
+      width: 100%;
+      height: 100%;
+   }
+   
+   
+    
+    
+    h2 {
+      font-size: $fontSizeH2Mob;
+      color: $defaultGray;
+      text-transform: uppercase;
+    }
+    
+    p {
+      color: $defaultGray;
+      font-size: $fontSIzePMob
+    }
+  }
+
+  .lessonprice {
+    @include flexThings(column,5vh,0vh);
+    align-items: center;
+    >article {
+      @include flexThings(column,3vh,0vh);
+      width: 95%;
+    }
+    span {
+      font-size: 20px;
+      font-weight: 600;
+    }
+    li {
+      list-style-type: none;
+      color: $defaultGray;
+    }
+    table,
+    td {
+      border: 3px solid $defaultGray;
+      text-align: center;
+    }
+    th,
+    td {
+      color: $defaultGray;
+    }
+    table {
+      width: 95%;
+    }
+  }
+
+  .lessonplace {
+    @include flexThings(column,3vh,0vh);
+    >article {
+    @include flexThings(column,3vh,0vh);
+    }
+    aside {
+    @include flexThings(column,1vh,0vh);
+    }
+    ul {
+    @include flexThings(column,1vh,0vh);
+    }
+    h3,
+    li,
+    a,
+    address {
+      list-style-type: square;
+      color: $defaultGray;
+    }
+    a {
+      text-decoration: none;
+    }
+  }
+  .recipe {
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    @include flexThings(column,3vh,0vh);
+    align-items: center;
+    >article {
+    @include flexThings(column,3vh,0vh);
+    align-items: center;
+    text-align: center;
+    width: 95%;
+    }
+    h2 {
+      font-size: $fontSizeH2Mob;
+      color: $defaultGray;
+      text-transform: uppercase;
+    }
+    span {
+      width: 20%;
+      border-bottom: 2px solid $defaultGray;
+    }
+    li {
+      list-style-type: none;
+    }
+  }
+  .accordion {
+    width: 85%;
+    --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0);
+  }
+  .accordion-body {
+    @include flexThings(column,2vh,0);
+    img {
+      width: 100%;
+      height: 35vh;
+    }
+  }
+  .accordion-button {
+    background-color: $defaultLayer;
+    color: $defaultWhite;
+  }
+  .accordion-button:not(.collapsed){
+    background-color: $defaultLayer;
+    color: $defaultWhite;
+  }
+  .accordion-button:not(.collapsed)::after {
+    color: black;
+  }
+  
+
+  
+
+  .shopping {
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    @include flexThings(column,3vh,0vh);
+    >article{
+      @include flexThings(column,3vh,0vh);
+      align-items: center;
+      text-align: center;
+    }
+    h2 {
+      font-size: $fontSizeH2Mob;
+      text-transform: uppercase;
+    }
+    p {
+      font-size: $fontSIzePMob;
+      width: 95%;
+    }
+    img {
+      width: 100%;
+      height: 30vh;
+    }
+    a {
+      text-decoration:none;
+      color: $defaultWhite;
+      background-color: $defaultLayer;
+      border: 1px solid $defaultGray;
+      padding: 2%;
+      transition: .4s;
+      &:hover {
+        background-color: $defaultWhite;
+        color: $defaultGray;
+      }
+    }
+    aside {
+      @include flexThings(row,0vh,2vh);
+      justify-content: center;
+      align-items: center;
+      padding-top: 2vh;
+      padding-bottom: 2vh;
+      border: 1px solid $defaultGray;
+    }
+    
+  }
+}
