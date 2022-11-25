@@ -1,0 +1,67 @@
+@media (min-width:1000px) {
+
+  
+  .btn-primary {
+    --bs-btn-hover-bg:none;
+  }
+
+  .mission {
+    >section {
+      height: 55vh;
+    }
+  }
+  .event {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    @include flexCol;
+    align-items: center;
+    aside {
+      width: 80%;
+    }
+    @include flexCol; 
+      row-gap: 10vh;
+    >section {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    figure {
+      width: 30%;
+      &:hover {
+        opacity: .3;
+      }
+    }
+  }
+  .lesson {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    @include flexCol;
+    align-items: center;
+    article {
+      width: 80%;
+    }
+  }
+  .recipe {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    @include flexThings(column,10vh,0vh);
+  }
+  #accordionExample {
+    img {
+      width: 70vh;
+      height: 70vh;
+    }
+  }
+  #shoppingcart {
+    flex-direction: row;
+    justify-content: center;
+    width: 68%;
+  }
+  #carouselExampleControls {
+    width: 30%;
+  }
+  .shopping {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+  }
+  
+}
