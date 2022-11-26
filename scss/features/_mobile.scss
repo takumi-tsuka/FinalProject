@@ -1,0 +1,422 @@
+@media (min-width:$min-WidthMob){
+    h2{
+        color: $defaultWhite;
+        font-size: $fontSizeH2Mob;
+        text-transform: uppercase;
+    }
+
+    p{
+        color: $defaultWhite;
+        font-size: $fontSIzePMob;
+        line-height: 1.5;
+    }
+
+    .headfea{
+        @include bgImg("/img/header-fea-bg.jpg");
+
+        details{
+            >ul{
+                @include flexCol;
+                row-gap: 1vh;
+            }
+
+            li{
+                list-style-type: none;
+            }
+        }
+    }
+
+    .dropdown{
+        width: 20%;
+        >button{
+            background-color: transparent;
+            border: none;
+            text-transform: capitalize;
+        }
+
+        a{
+            font-size: $fontSIzePMob;
+            text-transform: uppercase;
+        }
+    }
+
+    .dropdown-menu {
+        --bs-dropdown-min-width: 0;
+    }
+
+    .udon{
+        padding-top: 3vh;
+        padding-bottom: 3vh;
+        background-color: $defaultGray;
+        @include flexThings(column,5vh,0);
+        align-items: center;
+
+        h3{
+            font-size: $fontSizeH3Mob;
+            color: $defaultWhite;
+            font-weight: 300;
+            text-transform: uppercase;
+        }
+
+        figure{
+            width: 95%;
+        }
+        
+        h3{
+            text-align: center;
+        }
+
+        p{
+            text-align: justify;
+            line-height: 1.5;
+        }
+
+        :nth-child(2){
+            img{
+                float: left;
+                margin-right: 1vh;
+            }
+        }
+
+        :last-child{
+            img{
+                float: right;
+                margin-left: 1vh;
+            }
+        }
+
+        img{
+            width: 12vh;
+            height: 12vh;
+        }
+    }
+
+    .history{
+        background-color: $defaultBlack;
+        padding-top: 3vh;
+        padding-bottom: 3vh;
+        @include flexCol;
+        align-items: center;
+        row-gap: 3vh;
+
+        h4{
+            color: $defaultWhite;
+            font-size: $fontSizeH3Mob;
+            text-transform: uppercase;
+            font-weight: 400;
+
+        }
+
+        p{
+            padding-bottom: 3vh;
+            text-align: justify
+        }
+
+        > section{
+            @include flexCol;
+            align-items:center;
+            row-gap: 3vh;
+        }
+
+        a{
+            text-transform: capitalize;
+            font-size: 12px;
+            padding: 0;
+            padding: 1%;
+            padding-top: 6%;
+            padding-left: 3%;
+        }
+
+        figure{
+            width: 100%;
+        }
+
+        img{
+            width: 100%;
+            height: 25vh;
+        }
+
+        article{
+            width: 95%;
+            display: flex;
+            justify-content:center;
+            column-gap: 3vh;
+
+        }
+    }
+
+    .col-4{
+        width: 30%;
+        padding: 0;
+        >section{
+            border-radius: 4px;
+        }
+    }
+
+    .col-8{
+        width: 60%;
+        padding: 0;
+    }
+
+    .list-group{
+        --bs-list-group-bg: rgb(215, 215, 215);
+        --bs-list-group-active-bg: rgb(115, 115, 115);
+        --bs-list-group-active-border-color: rgb(115, 115, 115);
+    }
+
+    .compo{
+        background-color: $defaultGray;
+        padding-top: 3vh;
+        padding-bottom: 3vh;
+        @include flexCol;
+        align-items: center;
+        row-gap: 6vh;
+
+        >p{
+            width: 95%;
+            text-align: justify;
+        }
+
+        h3{
+            font-size: $fontSizeH3Mob;
+            color: $defaultWhite;
+            text-transform: uppercase;
+        }
+
+        h4{
+            font-size: 16px;
+            color: $defaultWhite;
+            text-transform: uppercase;
+            font-weight: 300;
+            margin: 0;
+        }
+
+        >article{
+            @include flexCol;
+            align-items: center;
+            row-gap: 8vh;
+
+            p{
+                text-align: center;
+            }
+        }
+
+        figure{
+            @include flexCol;
+            align-items: center;
+        }
+
+        img{
+            width: 30vh;
+            height: 25vh;
+            border-radius: 5px;
+        }
+
+        section{
+            @include flexCol;
+            align-items: center;
+            row-gap: 3vh;
+            width: 95%
+        }
+
+        aside{
+            @include flexCol;
+            align-items: center;
+            row-gap: 5vh;
+
+            figure{
+                @include flexCol;
+                align-items: center; 
+                row-gap: 2vh;
+            }
+
+            img{
+                width: 30vh;
+                height: 25vh;
+                border-radius: 50%;
+                border: 5px solid $defaultWhite;
+            }
+
+            figcaption{
+                @include flexCol;
+                align-items: center;
+                row-gap: 1vh;
+            }
+        }
+    }
+
+    .variety{
+        padding-top: 3vh;
+        padding-bottom: 3vh;
+        @include flexCol;
+        align-items: center;
+        row-gap: 3vh;
+        background-color: $defaultBlack;
+
+        >section{
+            @include flexCol;
+            align-items: center;
+            row-gap: 5vh;
+            width: 95%;
+
+            >p{
+                text-align: center;
+            }
+        }
+
+        article{
+            @include flexCol;
+            align-items: center;
+            row-gap: 3vh;
+        }
+
+        figure{
+            @include flexCol;
+            align-items: center;
+            row-gap: 2vh;
+        }
+
+        img{
+            width: 32vh;
+            height: 24vh;
+            border-radius: 10px;
+        }
+
+        aside{
+            >p{
+                color: $defaultWhite;
+            }
+        }
+    }
+
+    .btn-primary{
+        --bs-btn-bg: rgb(60, 60, 60);
+        --bs-btn-border-color: rgb(60, 60, 60);
+        --bs-btn-active-color: #fff;
+        --bs-btn-active-bg: rgb(85, 85, 85);
+        --bs-btn-active-border-color: rgb(85, 85, 85);
+        --bs-btn-hover-bg: rgb(90,90,90);
+        --bs-btn-hover-border-color: rgb(90,90,90);
+        
+    }
+
+    .card{
+        --bs-card-bg: $defaultBlack;
+    }
+
+    .info{
+        background-color: $defaultGray;
+        @include flexCol;
+        align-items: center;
+        row-gap: 5vh;
+        padding-top: 3vh;
+        padding-bottom: 3vh;
+
+        >section{
+            width: 95%;
+            @include flexCol;
+            align-items: center;
+            row-gap: 5vh;
+        }
+
+        h3{
+            font-size: $fontSizeH3Mob;
+            color: $defaultWhite;
+        }
+
+
+        img{
+            width: 35vh;
+            height: 25vh;
+        }
+        
+        article{
+            @include flexCol;
+            align-items: center;
+            row-gap: 5vh;
+        }
+
+        figure{
+            @include flexCol;
+            align-items: center;
+            row-gap: 1vh;
+        }
+
+        figcaption{
+            color: $defaultWhite;
+            font-size: $fontSizeH3Mob;
+        }
+
+        aside{
+            @include flexCol;
+            align-items: center;
+            row-gap: 1vh;
+        }
+
+        p{
+            text-align: justify;
+        }
+
+        table{
+            width: 95%;
+            caption-side: top;
+            height: 35vh;
+        }
+
+        thead{
+            border: 1px solid $defaultWhite;
+            background-color: $defaultBlack;
+        }
+
+        th,
+        td{
+        color: $defaultWhite;
+        border: 1px solid $defaultWhite;
+        text-align: center;
+        padding: 1%;
+        }
+
+        th{
+            font-weight: 500;
+        }
+
+        td{
+            font-weight: 300;
+        }
+
+        tr:nth-child(even){
+            background-color: $defaultBlack
+        }
+    
+        caption{
+            color: $defaultWhite;
+            padding-top: 0;
+            padding-bottom: 0;
+            text-align: center;
+            font-size: $fontSizeH3Mob;
+            padding-bottom: 1vh;
+        }
+    }
+
+    .footfea{
+        color:$defaultWhite;
+
+        summary{
+            text-transform: uppercase;
+        }
+        a{
+            border: none;
+        }
+
+        ul{
+            @include flexCol;
+            row-gap: 2vh;
+            align-items: center;
+            width: 100%;
+        }
+
+        li{
+            list-style-type: none;
+        }
+    }
+}

@@ -1,0 +1,267 @@
+@media (min-width:$min-widthDes){
+    h2{
+        font-size: $fontSizeH2Des;
+    }
+
+    .headfea{
+        button{
+            font-size: 20px;
+        }
+
+        h1{
+            padding-bottom: 15vh;
+        }
+
+        nav{
+            >ul{
+                list-style-type: none;
+            }
+        }
+
+        
+    }
+
+    .udon{
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+
+        figure{
+            width: 80%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            column-gap: 5vh;
+        }
+
+        figcaption{
+            width: 80%;
+            @include flexCol;
+            align-items: center;
+            row-gap: 3vh;
+        }
+
+        p{
+            text-align: center;
+        }
+
+        :nth-child(2){
+            img{
+                float: none;
+                margin-right: 0;
+            }
+        }
+
+        :last-child{
+            img{
+                float: none;
+                margin-left: 0;
+            }
+        }
+
+        img{
+            width: 30vh;
+            height: 30vh;
+        }
+    }
+
+    .history{
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+
+        >section{
+            width: 80%;
+        }
+
+        figure{
+            width: 45%;
+        }
+
+        img{
+            height: 50vh;
+        }
+
+        article{
+            width: 55%;
+            column-gap: 2vh;
+        }
+        
+        a{
+            padding-top: 3vh;
+            padding-bottom: 3vh;
+            text-align: center;
+            font-size: 18px;
+
+
+        }
+    }
+
+    .compo{
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+        row-gap: 10vh;
+
+        >p{
+            width: 80%;
+        }
+
+        h3{
+            font-size: $fontSizeH3Des;
+        }
+
+        h4{
+            font-size: 24px;
+        }
+
+        article{
+            width: 80%;
+            flex-direction: row;
+            column-gap: 10vh;
+        }
+        
+        section:first-child{
+           width: 65%;
+           row-gap: 5vh;
+        }
+
+        section:last-child{
+            width: 30%;
+        }
+
+        img{
+            width: 50vh;
+            height: 35vh;
+            border-radius: 25px;
+            border: 3px solid $defaultWhite;
+        }
+
+        figure{
+            &:hover{
+                figcaption{
+                    transition: .4s;
+                    background-color: rgba(162, 162, 162, 0.375);
+                }
+            }
+        }
+
+        figcaption{
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        aside{
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            column-gap: 8vh;
+            >figure:first-child{
+                width: 95%;
+            }
+
+            >figure{
+                width: 45%;
+            }
+
+            img{
+                width: 45vh;
+                height: 38vh;
+            }
+        }
+    }
+
+    .variety{
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+        row-gap: 10vh;
+
+        >section{
+            width: 80%;
+            flex-direction: row;
+            align-items:flex-start;
+            justify-content: center;
+            column-gap: 5vh;
+
+            >p{
+                width: 40%;
+                line-height: 2.5;
+                text-align: justify;
+            }
+        }
+
+        article{
+            width: 60%;
+
+            p{
+                text-align: justify;
+            }
+        }
+
+        img{
+            width: 45vh;
+            height: 32vh;
+        }
+    }
+
+    .info{
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+        row-gap: 10vh;
+
+        >section{
+            width: 80%;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        h3{
+            font-size: $fontSizeH3Des;
+        }
+
+        figcaption{
+            font-size: $fontSizeH3Des;
+            font-weight: 500;
+        }
+
+        img{
+            width: 65vh;
+            height: 40vh;
+        }
+
+        article{
+            width: 48%;
+        }
+
+        tbody{
+            tr{
+                &:hover{
+                    background-color: rgba(162, 162, 162, 0.375);
+                    transition: .4s;
+                }
+            }
+        }
+
+        td,
+        th{
+            font-size: 22px;
+        }
+
+        caption{
+            font-size: $fontSizeH3Des;
+            font-weight: 500;
+        }
+
+        table{
+            width: 48%;
+            height: 55vh;
+        }
+    }
+
+    .footfea{
+        a{
+            &:hover{
+                background-color: transparent;
+                color: dimgray;
+            }
+        }
+    }
+}

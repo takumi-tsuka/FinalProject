@@ -1,0 +1,117 @@
+@media(min-width:$min-widthTab) {
+.headerorgbg {
+  h1 {
+    font-size: $fontSizeH1Tab;
+  }
+}
+.mission {
+  height: 70vh;
+  >section {
+    height: 65vh;
+  }
+  h2 {
+    font-size: $fontSizeH2Tab;
+  }
+  p {
+    font-size: 23px;
+  }
+
+}
+.event {
+  h2 {
+    font-size: $fontSizeH2Tab;
+  }
+  p{
+    font-size: 23px;
+    font-weight: 400;
+  }
+  img {
+    width: 40vh;
+    height: 40vh;
+  }
+  h3 {
+    font-size: 30px;
+  }
+}
+
+.lesson{
+  h2 {
+    font-size: $fontSizeH2Tab;
+  }
+  p{
+    font-size: 23px;
+    font-weight: 400;
+  }
+}
+#lessonpriceplace {
+  flex-direction: row;
+  column-gap: 2vh;
+  align-items: flex-start;
+  width: 90%;
+  li {
+    font-size: 20px;
+  }
+}
+
+.lessonplace{
+  ul{
+    padding-left: 15%;
+    text-align: left;
+  }
+}
+
+.recipe {
+  h2 {
+    font-size: $fontSizeH2Tab;
+  }
+  p {
+    font-size: 23px;
+    font-weight: 400;
+  }
+  figure {
+    display: flex;
+    justify-content: center;
+  }
+  img {
+    width: 40vh;
+    height: 40vh;
+  }
+  ul {
+    width: 80%;
+  }
+  li {
+    font-size: 18px;
+  }
+}
+.accordion-button {
+  font-size: 25px;
+}
+.shopping {
+  @include flexCol;
+  align-items: center;
+  h2 {
+    font-size: $fontSizeH2Tab;
+  }
+  p {
+    font-size: 23px;
+    font-weight: 400;
+  }
+}
+
+
+
+
+#shoppingcart {
+  flex-direction: row;
+  justify-content: space-between;
+  column-gap: 3vh;
+  width: 90%;
+}
+#carouselExampleControls {
+  width: 50%;
+}
+
+
+
+
+}

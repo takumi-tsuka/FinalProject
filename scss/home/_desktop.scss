@@ -62,6 +62,12 @@
     }
   }
 
+  .headerorgbg{
+    h1{
+      font-size: $fontSizeH1Des;
+    }
+  }
+
   .about{
     h2{
       font-size: $fontSizeH2Des;
@@ -151,13 +157,17 @@
       font-size: $fontSizePDes;
     }
     aside {
-      // border: 1px solid red;
-      width: 28%;
+      width: 41vh;
+      height: 41vh;
     }
     section {
+      justify-content: center;
+      column-gap: 5vh;
+      width: 90%;
+
       >a {
         font-size: 20px;
-        width: 60%;
+        width: 90%;
         &:hover {
           background-color: transparent;
           color: rgb(168, 167, 167);

@@ -1,0 +1,198 @@
+@media(min-width:$min-widthTab){
+    h2{
+        font-size: $fontSizeH2Tab;
+    }
+
+    p{
+        font-size: $fontSizePTab;
+    }
+
+    .headfea{
+
+        details{
+            >ul{
+                row-gap: 2vh;
+            }
+        }
+
+        button{
+            font-size: $fontSizePTab;
+        }
+    }
+
+    .dropdown{
+        a{
+            font-size: $fontSizePTab;
+        }   
+    }
+
+    .udon{
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+        row-gap: 8vh;
+
+        h3{
+            font-size: $fontSizeH3Tab;
+        }
+
+        figure{
+            width: 90%;
+        }
+
+        p{
+            line-height: 2;
+        }
+
+        img{
+            width: 16vh;
+            height: 16vh;
+        }
+    }
+
+    .history{
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+        row-gap: 5vh;
+
+        >section{
+            width: 90%;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+            
+        }
+
+        h4{
+            font-size: $fontSizeH3Tab;
+        }
+        figure{
+            width: 50%;
+        }
+
+        article{
+            width: 50%;
+            column-gap: 1vh;
+        }
+
+        a{
+            font-size: $fontSizePTab;
+        }
+
+        img{
+            height: 30vh;
+        }
+
+    }
+
+    .compo{
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+
+        >p{
+            width: 90%;
+            line-height: 2;
+        }
+
+        h3{
+            font-size: $fontSizeH3Tab;
+        }
+
+        h4{
+            font-size: 20px;
+        }
+
+        figure{
+            row-gap: 1vh;
+        }
+
+        img{
+            width: 28vh;
+            height: 22vh;
+        }
+
+        article{
+            row-gap: 5vh;
+        }
+
+        aside{
+            img{
+                width: 28vh;
+                height: 22vh;
+            }
+        }
+        section{
+            figure{
+                width: 90%;
+            }
+        }
+        
+    }
+
+    .variety{
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+
+        >section{
+            width: 90%;
+        }
+
+        article{
+            row-gap: 5vh;
+            align-items: flex-start;
+        }
+
+        figure{
+            flex-direction: row;
+            align-items: flex-start;
+            column-gap: 1vh;
+        }
+
+        img{
+            width: 28vh;
+            height: 20vh;
+        }
+        button{
+            font-size: 20px;
+        }
+    }
+
+    .info{
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+
+        > section{
+            width: 90%;
+        }
+
+        h3{
+            font-size: $fontSizeH3Tab;
+        }
+
+        img{
+            width: 45vh;
+            height: 30vh;
+        }
+
+        figcaption{
+            font-size: $fontSizeH3Tab;
+        }
+
+        p{
+            line-height: 2;
+        }
+
+        table{
+            width: 100%;
+        }
+
+        th,
+        td{
+        font-size: 20px;
+        }
+
+        caption{
+            font-size: $fontSizeH3Tab;
+            
+        }
+    }
+}
